@@ -12,6 +12,7 @@ This is a _retro_ port of [Halve](https://github.com/TaylanTatli/Halve) (**Jekyl
 * search
 * taxonomies
 * PWA (dynamic cache/offline mode)
+* notifications
 * auto color schemes
 * ToC
 * pagination

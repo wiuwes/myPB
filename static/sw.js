@@ -20,19 +20,6 @@ const cacheList = [
   "/webfonts/hack-regular.woff2",
 ];
 
-function fetchedResponse(event, cache) {
-  return fetch(event.request).then((networkResponse) => {
-    if (networkResponse.status < 400) {
-      console.log("Caching the response to", event.request.url);
-      cache.put(event.request, networkResponse.clone());
-    } else {
-      console.log("Not caching the response to", event.request.url);
-    }
-
-    return networkResponse;
-  });
-}
-
 oninstall = (event) => {
   event.waitUntil(
     (async () => {
@@ -51,48 +38,24 @@ oninstall = (event) => {
 
 onfetch = (event) => {
   console.log("Fetching", event.request.url);
-  const destination = event.request.destination;
-  switch (destination) {
-    case 'scrypt':
-    case 'style':
-    case 'document': {
-      event.respondWith(caches.open(cacheName).then((cache) => {
-        return cache.match(event.request)
-          .then((cachedResponse) => {
-            return cachedResponse || fetchedResponse(
-              event, cache).catch(
-                () => {
-                  if (event.request.mode === 'navigate') {
-                    console.log(
-                      "Returning offline page; no cache found for",
-                      event.request.url
-                    );
+  event.respondWith(caches.open(cacheName).then((cache) => {
+    return cache.match(event.request).then((cachedResponse) => {
+      const fetchedResponse = fetch(event.request).then((networkResponse) => {
+        if (networkResponse.status < 400) {
+          console.log("Caching the response to", event.request.url);
+          cache.put(event.request, networkResponse.clone());
+        } else {
+          console.log("Not caching the response to", event.request.url);
+        }
 
-                    return cache.match("/offline/");
-                  }
-                }
-              );
-          });
-      }));
-      return;
-    }
-    case 'image':
-    case 'font':
-    default: {
-      event.respondWith(caches.open(cacheName).then((cache) => {
-        return cache.match(event.request.url).then((cachedResponse) => {
-          if (cachedResponse) {
-            console.log("Cache match for", event.request.url);
-            return cachedResponse;
-          }
+        return networkResponse;
+      });
 
-          return fetchedResponse(event, cache);
-        });
-      }));
-      return;
-    }
-  }
-};
+      return cachedResponse || fetchedResponse
+        .catch(() => cache.match('/offline/'));
+    });
+  }));
+}
 
 onmessage = (event) => {
   if (event.data.type === "PRECACHE") {

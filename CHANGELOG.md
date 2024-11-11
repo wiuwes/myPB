@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.19.2] - 2024-11-11
+
+### Bug Fixes
+
+- Drop destination check
+
+### Documentation
+
+- Add notifications
+
 ## [0.19.1] - 2024-10-21
 
 ### Bug Fixes

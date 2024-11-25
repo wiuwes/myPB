@@ -37,6 +37,10 @@ oninstall = (event) => {
 };
 
 onfetch = (event) => {
+  if (event.request.url.startsWith("https://matrix.cactus.chat")) {
+    return;
+  }
+
   console.log("Fetching", event.request.url);
   event.respondWith(caches.open(cacheName).then((cache) => {
     return cache.match(event.request).then((cachedResponse) => {

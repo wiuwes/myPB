@@ -1,7 +1,7 @@
 {
-  "name": "Halve-Z",
-  "short_name": "Halve",
-  "description": "Retro theme for Zola",
+  "name": "Wiu's projects",
+  "short_name": "Wiu",
+  "description": "My projects",
   "lang": "en-US",
   "display": "standalone",
   "start_url": "/",
@@ -15,10 +15,6 @@
     "developer"
   ],
   "shortcuts": [
-    {
-      "name": "Journal",
-      "url": "/posts"
-    },
     {
       "name": "Projects",
       "url": "/projects"

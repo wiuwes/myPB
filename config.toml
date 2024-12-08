@@ -73,6 +73,16 @@ links = [
     { name = "Code", url = "/projects/" },
 ]
 
+[extra.footer]
+enabled = true
+author = true
+copyright = true
+hash = true
+stack = true
+links = [
+    { name = "posts", url = "/posts/" },
+]
+
 [extra.social]
 email = "user_email"
 mastodon = "server/@user_name"

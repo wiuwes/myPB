@@ -2,7 +2,7 @@
 base_url = "https://wiu.netlify.app/"
 title = "Wiu's blog"
 description = "Я wiu, это мой блог."
-default_language = "ru"
+default_language = "en"
 author = "wiu"
 #theme = "halve-z"
 
@@ -53,8 +53,8 @@ subtitle = false
 
 [extra.home]
 title = "Wiu's blog"
-subtitle = "ХА-ХА"
-glitch = false
+subtitle = "HA-HA"
+glitch = true
 logo = { enabled = false, height = "100", width = "100" }
 footer = true
 
@@ -80,27 +80,27 @@ copyright = true
 hash = true
 stack = true
 links = [
-    { name = "posts", url = "/posts/" },
+     #{ name = "posts", url = "/posts/" },
 ]
 
 [extra.social]
 email = "user_email"
-mastodon = "server/@user_name"
-twitter = "user_name"
-facebook = "user_name"
-codeberg = "username"
+#mastodon = "server/@user_name"
+#twitter = "user_name"
+#facebook = "user_name"
+#codeberg = "username"
 github = "user_name"
-gitlab = "user_name"
-bitbucket = "user_name"
-stackoverflow = "12345/user_name"
-linkedin = "user_name"
-instagram = "user_name"
-lastfm = "user_name"
-twitch = "user_name"
+#gitlab = "user_name"
+#bitbucket = "user_name"
+#stackoverflow = "12345/user_name"
+#linkedin = "user_name"
+#instagram = "user_name"
+#lastfm = "user_name"
+#twitch = "user_name"
 reddit = "user_name"
 #flickr = "user_name"
-keybase = "user_name"
-hackernews = "user_name"
+#keybase = "user_name"
+#hackernews = "user_name"
 
 [extra.comments]
 system = "none"

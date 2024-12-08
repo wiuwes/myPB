@@ -1,9 +1,9 @@
 ###
-base_url = "https://halve-z.netlify.app"
-title = "Halve-Z Zola theme"
-description = "Two-column retro theme for Zola"
-default_language = "en"
-author = "charlesrocket"
+base_url = "https://wiu.netlify.app/"
+title = "Wiu's blog"
+description = "Я wiu, это мой блог."
+default_language = "ru"
+author = "wiu"
 #theme = "halve-z"
 
 compile_sass = true
@@ -52,8 +52,8 @@ tags = false
 subtitle = false
 
 [extra.home]
-title = "Halve-Z"
-subtitle = "Zola theme"
+title = "Wiu's blog"
+subtitle = "ХА-ХА"
 glitch = false
 logo = { enabled = false, height = "100", width = "100" }
 footer = true
@@ -71,16 +71,6 @@ posts = true
 posts_label = "Posts"
 links = [
     { name = "Code", url = "/projects/" },
-]
-
-[extra.footer]
-enabled = true
-author = true
-copyright = true
-hash = true
-stack = true
-links = [
-    { name = "posts", url = "/posts/" },
 ]
 
 [extra.social]

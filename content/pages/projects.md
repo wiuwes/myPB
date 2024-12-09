@@ -5,10 +5,10 @@ template = "page.html"
 draft = false
 +++
 
-{{ project(link="https://github.com/charlesrocket/halve-z") }}
+{{ project(link="https://github.com/wiuwes/cafe_deClie") }}
 
-{{ project(link="https://github.com/keats/tera") }}
+{{ project(link="https://github.com/wiuwes/Booltrainer") }}
 
-{{ project(link="https://github.com/getzola/zola") }}
+{{ project(link="https://github.com/wiuwes/TodoTracker") }}
 
-{{ project(link="https://github.com/rust-lang/rust") }}
+{{ project(link="https://github.com/ITOMIK/tender-hack-app") }}

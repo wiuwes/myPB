@@ -84,12 +84,12 @@ links = [
 ]
 
 [extra.social]
-email = "user_email"
+email = "wiuwesco@gmail.com"
 #mastodon = "server/@user_name"
 #twitter = "user_name"
 #facebook = "user_name"
 #codeberg = "username"
-github = "user_name"
+github = "wiuwes"
 #gitlab = "user_name"
 #bitbucket = "user_name"
 #stackoverflow = "12345/user_name"

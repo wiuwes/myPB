@@ -4,6 +4,14 @@ template = "index.html"
 
 # Info
 
-[Halve-Z](https://github.com/charlesrocket/halve-z) is a retro two-column theme for [Zola](https://github.com/getzola/zola). It features search, taxonomies, automatic color schemes, project cards, and a comment system.
+Hi! I'm wiu, a first-year student at SUAI (St. Petersburg State University of Aerospace Instrumentation).
 
-The [documentation](https://github.com/charlesrocket/halve-z/blob/trunk/README.md) contains the full set of features and installation manuals.
+About Me:
+
+    Studies: This year, I enrolled in the Faculty of Information Technology and Programming.
+    Interests: Competitive programming and participating in hackathons. I love solving complex problems and finding creative solutions.
+    Goals: I want to grow in the IT field, participate in international competitions, and create projects that help people.
+
+My Blog: Here, I share my experiences, thoughts on programming, preparation for competitions and hackathons, as well as tips for students. I hope my posts will be useful and interesting not only to my classmates but to everyone who is passionate about IT.
+
+Contact: f you have any questions or suggestions,[call me](tel:+78887779999).

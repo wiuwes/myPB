@@ -10,5 +10,3 @@ draft = false
 {{ project(link="https://github.com/wiuwes/Booltrainer") }}
 
 {{ project(link="https://github.com/wiuwes/TodoTracker") }}
-
-{{ project(link="https://github.com/ITOMIK/tender-hack-app") }}
